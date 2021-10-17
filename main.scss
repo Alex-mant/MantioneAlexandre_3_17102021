@@ -1,0 +1,204 @@
+/*-------
+--Fonts--
+--------*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+ /*font-family: 'Shrikhand', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+ /*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto2:wght@100&display=swap');
+
+/*-------
+-Variables-
+--------*/
+$primary : #9356DC;
+$secondary : #FF79DA;
+$tertiary :#99E2D0;
+$title: 'Shrikhand', cursive;
+$text:'Roboto', sans-serif;
+$textAlt:'Roboto2', sans-serif;
+
+/*-------
+---Main---
+--------*/
+
+*{
+    box-sizing: border-box;   
+}
+
+body{
+    margin: 0; 
+    font-family: $text
+}
+
+a{
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+}
+
+ol li{
+    list-style: none;
+}
+
+
+/*-------
+--Header--
+--------*/
+
+.header{
+    font-family: $title;
+    display: flex;
+    justify-content: center;
+    h1{
+        margin: 14px 0 2px 0;
+        font-size: 30px;
+        font-weight: 100;
+    }
+}
+
+/*-------
+--Local--
+--------*/
+
+.local{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eaeaea;
+    i{
+        margin-right: 10px;
+    }
+    .local__text{
+        font-weight: 550;
+    }
+}
+
+/*------
+-expOurRest-
+--------*/
+
+.expOurRest{
+    height: 290px;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 32px;
+    h2{
+        margin: 8px auto;
+        font-size: 24px;
+    }
+    p{
+        font-family: $textAlt;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: 13px;
+        margin-bottom: 42px;
+    }
+    a{
+        padding: 15px 20px;
+        border-radius: 50px;
+        background-image: linear-gradient($secondary,$primary);
+        color: #ffff;
+        box-shadow: .25rem 0.25rem 10px black 25%;
+    }
+}
+
+/*------
+-Operating-
+--------*/
+
+.operating{
+    margin: 0 20px;
+    .op_card{
+        border-radius: 16px;
+        background-color: #f6f6f6;
+        box-shadow: 0px 8px 19px -4px rgba(180, 168, 168, 0.83);
+        padding: 20px;
+        margin: 15px;
+    }
+    .op_card:hover .ope_icon{
+        color: $primary;
+    }
+    .ope_icon{
+        color: #7e7e7e;
+    }
+    ol{ /*ICI*/
+        padding: 0;
+        li::before{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: counter(listol);
+            counter-increment: listol 1;
+            background: $primary;
+            height: 22px;
+            width: 22px;
+            border-radius: 100px;
+            
+            color: #fff;
+            position: absolute;
+            left: 25px;
+           
+        
+        }
+    }
+    i{
+        margin-right: 20px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------
+--Footer--
+--------*/
+.Footer{
+    height: 200px;
+    color: #ffff;
+    background-color:#353535;
+    
+    h4{
+        padding: 20px;
+        margin: 0;
+        font-family: $title;
+        font-weight: lighter;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }    
+    .footer_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 20px;
+        a{
+        font-family: $text;
+        font-size: 15px;
+        padding: 3px 0;
+        color: #ffff;
+        }
+        .footer_icon{
+            margin-right: 10px;
+        }
+    }
+}

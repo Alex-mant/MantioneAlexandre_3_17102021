@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontawesome.com/5725aae538.js" crossorigin="anonymous"></script>
-        <title>P3_A.Mantione_OhMyFood!</title>
-    </head>
-    <body>    
-        <header class="header">
-            <h1>ohmyfood</h1>
-        </header>
-        <main>
-            <section class="local">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4 class="local__text">Paris, Belleville</h4>
-            </section>
 
-            <section class="expOurRest">
-                <h2>Réservez le menu qui <br> vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a href="#" class="expOurRest__button">Explorer nos restaurants</a>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/5725aae538.js" crossorigin="anonymous"></script>
+    <title>P3_A.Mantione_OhMyFood!</title>
+</head>
 
-            <section class="operating">
-                <h2>Fonctionnement</h2>
-                <ol>
-                    <li class="op__card"><i class="fas fa-mobile-alt op__icon"></i>Choisissez un restaurant</li>
-                    <li class="op__card"><i class="fas fa-list-ul op__icon"></i>Composez votre menu</li>
-                    <li class="op__card"><i class="fas fa-store op__icon"></i>Dégustez au restaurant</li>
-                </ol>
-            </section>
+<body>
+    <header class="header">
+        <h1>ohmyfood</h1>
+    </header>
+    <main>
+        <section class="local">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4 class="local__text">Paris, Belleville</h4>
+        </section>
 
-            <section class="restaurants">
-                <h2 class="restau__title">Restaurants</h2>
-                <div class="restau__wrapper">
+        <section class="expOurRest">
+            <h2>Réservez le menu qui <br> vous convient</h2>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a href="#" class="expOurRest__button">Explorer nos restaurants</a>
+        </section>
 
-                    <div class="restau__card">
-                        <div class="card__img1"><div class="new">Nouveau</div></div>
-                        <div class="card__identity">
-                            <div class="card__titlesPlaces">
-                                <h3 class="card__title">La palette du goût</h3>
-                                <p class="card__place">Ménilmontant</p>
-                            </div>
-                            <div class="card__like">
-                                <div class="coeur">
-                                    <i class="fas fa-heart heart_like filled"></i>
-                                    <i class="fas fa-heart heart_like white"></i>        
-                                    <i class="far fa-heart empty_heart "></i>
-                                </div>
+        <section class="operating">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li class="op__card"><i class="fas fa-mobile-alt op__icon"></i>Choisissez un restaurant</li>
+                <li class="op__card"><i class="fas fa-list-ul op__icon"></i>Composez votre menu</li>
+                <li class="op__card"><i class="fas fa-store op__icon"></i>Dégustez au restaurant</li>
+            </ol>
+        </section>
+
+        <section class="restaurants">
+            <h2 class="restau__title">Restaurants</h2>
+            <div class="restau__wrapper">
+
+                <div class="restau__card">
+                    <div class="card__img1">
+                        <div class="new">Nouveau</div>
+                    </div>
+                    <div class="card__identity">
+                        <div class="card__titlesPlaces">
+                            <h3 class="card__title">La palette du goût</h3>
+                            <p class="card__place">Ménilmontant</p>
+                        </div>
+                        <div class="card__like">
+                            <div class="coeur">
+                                <i class="fas fa-heart heart_like filled"></i>
+                                <i class="fas fa-heart heart_like white"></i>
+                                <i class="far fa-heart empty_heart "></i>
                             </div>
                         </div>
                     </div>
-
-                    <div class="restau__card">
-                        <div class="card__img2"><div class="new">Nouveau</div></div>
-                        <div class="card__identity">
-                            <div class="card__titlesPlaces">
-                                <h3 class="card__title">La note enchantée</h3>
-                                <p class="card__place">Charonne</p>
-                            </div>
-                            <div class="card__like">
-                                <div class="coeur">
-                                    <i class="fas fa-heart heart_like filled"></i>
-                                    <i class="fas fa-heart heart_like white"></i>        
-                                    <i class="far fa-heart empty_heart "></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="restau__card">
-                        <div class="card__img3"></div>
-                        <div class="card__identity">
-                            <div class="card__titlesPlaces">
-                                <h3 class="card__title">A la française</h3>
-                                <p class="card__place">Cité Rouge</p>
-                            </div>
-                            <div class="card__like">
-                                <div class="coeur">
-                                    <i class="fas fa-heart heart_like filled"></i>
-                                    <i class="fas fa-heart heart_like white"></i>        
-                                    <i class="far fa-heart empty_heart "></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="restau__card">
-                        <div class="card__img4"></div>
-                        <div class="card__identity">
-                            <div class="card__titlesPlaces">
-                                <h3 class="card__title">Délice des sens</h3>
-                                <p class="card__place">Folie-Méricourt</p>
-                            </div>
-                            <div class="card__like">
-                                <div class="coeur">
-                                    <i class="fas fa-heart heart_like filled"></i>
-                                    <i class="fas fa-heart heart_like white"></i>        
-                                    <i class="far fa-heart empty_heart "></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
-        </main>
-        <footer class="Footer">
-            <h4>ohmyfood</h4>
-            <div class="footer_links">
-                <a href="#"><i class="fas fa-utensils footer_icon"></i>Proposer un restaurant</a>
-                <a href="#"><i class="fas fa-hands-helping footer_icon"></i>Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
+
+                <div class="restau__card">
+                    <div class="card__img2">
+                        <div class="new">Nouveau</div>
+                    </div>
+                    <div class="card__identity">
+                        <div class="card__titlesPlaces">
+                            <h3 class="card__title">La note enchantée</h3>
+                            <p class="card__place">Charonne</p>
+                        </div>
+                        <div class="card__like">
+                            <div class="coeur">
+                                <i class="fas fa-heart heart_like filled"></i>
+                                <i class="fas fa-heart heart_like white"></i>
+                                <i class="far fa-heart empty_heart "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restau__card">
+                    <div class="card__img3"></div>
+                    <div class="card__identity">
+                        <div class="card__titlesPlaces">
+                            <h3 class="card__title">A la française</h3>
+                            <p class="card__place">Cité Rouge</p>
+                        </div>
+                        <div class="card__like">
+                            <div class="coeur">
+                                <i class="fas fa-heart heart_like filled"></i>
+                                <i class="fas fa-heart heart_like white"></i>
+                                <i class="far fa-heart empty_heart "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restau__card">
+                    <div class="card__img4"></div>
+                    <div class="card__identity">
+                        <div class="card__titlesPlaces">
+                            <h3 class="card__title">Délice des sens</h3>
+                            <p class="card__place">Folie-Méricourt</p>
+                        </div>
+                        <div class="card__like">
+                            <div class="coeur">
+                                <i class="fas fa-heart heart_like filled"></i>
+                                <i class="fas fa-heart heart_like white"></i>
+                                <i class="far fa-heart empty_heart "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </footer>    
-    </body>
+        </section>
+    </main>
+    <footer class="Footer">
+        <h4>ohmyfood</h4>
+        <div class="footer_links">
+            <a href="#"><i class="fas fa-utensils footer_icon"></i>Proposer un restaurant</a>
+            <a href="#"><i class="fas fa-hands-helping footer_icon"></i>Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+
 </html>

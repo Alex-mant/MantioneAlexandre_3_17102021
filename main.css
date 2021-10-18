@@ -277,7 +277,9 @@ ol li {
   position: relative;
 }
 
-.restaurants .restau__card .card__like .heart_like, .restaurants .restau__card .card__like .empty_heart, .restaurants .restau__card .card__like .white {
+.restaurants .restau__card .card__like .heart_like,
+.restaurants .restau__card .card__like .empty_heart,
+.restaurants .restau__card .card__like .white {
   position: absolute;
 }
 
@@ -304,16 +306,16 @@ ol li {
 
 .restaurants .restau__card .card__like .coeur:hover .empty_heart {
   -webkit-animation: change-background 0.35s;
-          animation: change-background 0.35s;
+  animation: change-background 0.35s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .restaurants .restau__card .card__like .coeur:hover .white {
   -webkit-animation: change-background 0.35s;
-          animation: change-background 0.35s;
+  animation: change-background 0.35s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .restaurants .restau__card .card__identity {
@@ -326,7 +328,8 @@ ol li {
   padding: 20px 20px;
 }
 
-.restaurants .restau__card .card__title, .restaurants .restau__card .card__place {
+.restaurants .restau__card .card__title,
+.restaurants .restau__card .card__place {
   margin: 0;
 }
 

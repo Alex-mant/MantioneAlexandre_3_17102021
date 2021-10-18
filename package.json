@@ -1,0 +1,19 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-mant/P3_OhMyFood-.git"
+  },
+  "author": "Mantione Alexandre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-mant/P3_OhMyFood-/issues"
+  },
+  "homepage": "https://github.com/Alex-mant/P3_OhMyFood-#readme"
+}

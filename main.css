@@ -55,6 +55,8 @@ ol li {
 --Local--
 --------*/
 .local {
+  -webkit-box-shadow: inset 1px 15px 14px -14px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 1px 15px 14px -14px rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +103,8 @@ ol li {
 
 .expOurRest a {
   padding: 15px 20px;
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -113,28 +117,36 @@ ol li {
 -Operating-
 --------*/
 .operating {
-  margin: 0 20px;
+  width: 100%;
+  padding: 0 5%;
 }
 
-.operating .op_card {
+.operating h2 {
+  margin-bottom: 32px;
+}
+
+.operating .op__card {
   border-radius: 16px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 0px 8px 19px -4px rgba(180, 168, 168, 0.83);
           box-shadow: 0px 8px 19px -4px rgba(180, 168, 168, 0.83);
-  padding: 20px;
+  padding: 25px 20px;
   margin: 15px;
+  cursor: pointer;
 }
 
-.operating .op_card:hover .ope_icon {
+.operating .op__card:hover .op__icon {
   color: #9356DC;
 }
 
-.operating .ope_icon {
+.operating .op__icon {
+  font-size: 18px;
+  margin-left: 10px;
   color: #7e7e7e;
 }
 
 .operating ol {
-  /*ICI*/
+  counter-reset: listOl;
   padding: 0;
 }
 
@@ -148,15 +160,15 @@ ol li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  content: counter(listol);
-  counter-increment: listol 1;
+  content: counter(listOl) "";
+  counter-increment: listOl;
   background: #9356DC;
   height: 22px;
   width: 22px;
   border-radius: 100px;
   color: #fff;
   position: absolute;
-  left: 25px;
+  left: 5.2%;
 }
 
 .operating i {
@@ -164,17 +176,28 @@ ol li {
 }
 
 /*------
+-Restaurants-
+--------*/
+.restaurants {
+  width: 100%;
+  padding: 0 5%;
+  margin-top: 90px;
+  background-color: #f5f5f5;
+}
+
+/*------
 --Footer--
 --------*/
 .Footer {
+  width: 100%;
+  padding: 0 5%;
   height: 200px;
   color: #ffff;
   background-color: #353535;
 }
 
 .Footer h4 {
-  padding: 20px;
-  margin: 0;
+  padding: 20px 0;
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
   font-size: 18px;
@@ -192,7 +215,6 @@ ol li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px;
 }
 
 .Footer .footer_links a {

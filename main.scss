@@ -181,19 +181,19 @@ ol li {
     margin-top: 90px;
     background-color: #f5f5f5;
 
-    .restau__card:hover .empty_heart {
-        -webkit-animation: change-background 0.35s;
-                animation: change-background 0.35s;
-        -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-    }
-
-    .restau__card:hover .white {
-        -webkit-animation: change-background 0.35s;
-                animation: change-background 0.35s;
-        -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-    }
+    // .restau__card:hover .empty_heart {
+    //     -webkit-animation: change-background 0.35s;
+    //             animation: change-background 0.35s;
+    //     -webkit-animation-fill-mode: forwards;
+    //             animation-fill-mode: forwards;
+    // }
+                                                        /*Alternative - hover on card*/
+    // .restau__card:hover .white {
+    //     -webkit-animation: change-background 0.35s;
+    //             animation: change-background 0.35s;
+    //     -webkit-animation-fill-mode: forwards;
+    //             animation-fill-mode: forwards;
+    // }
 
     .restau__card {
         max-width: 350px;
@@ -202,8 +202,7 @@ ol li {
         background-color: #fff;
         margin: 0 auto 20px auto;
         box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
-        cursor: pointer;
-        
+        cursor: pointer;        
 
         .card__like {
             
@@ -335,7 +334,19 @@ ol li {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-           
+            .coeur:hover .empty_heart {
+                -webkit-animation: change-background 0.35s;
+                animation: change-background 0.35s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+   
+            .coeur:hover .white {
+                -webkit-animation: change-background 0.35s;
+                animation: change-background 0.35s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }           
             
         }
 

@@ -182,20 +182,7 @@ ol li {
   padding: 0 5%;
   margin-top: 90px;
   background-color: #f5f5f5;
-}
-
-.restaurants .restau__card:hover .empty_heart {
-  -webkit-animation: change-background 0.35s;
-  animation: change-background 0.35s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.restaurants .restau__card:hover .white {
-  -webkit-animation: change-background 0.35s;
-  animation: change-background 0.35s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  /*Alternative - hover on card*/
 }
 
 .restaurants .restau__card {
@@ -317,6 +304,20 @@ ol li {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.restaurants .restau__card .card__like .coeur:hover .empty_heart {
+  -webkit-animation: change-background 0.35s;
+  animation: change-background 0.35s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.restaurants .restau__card .card__like .coeur:hover .white {
+  -webkit-animation: change-background 0.35s;
+  animation: change-background 0.35s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .restaurants .restau__card .card__identity {

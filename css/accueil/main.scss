@@ -180,20 +180,7 @@ ol li {
     padding: 0 5%;
     margin-top: 90px;
     background-color: #f5f5f5;
-
-    // .restau__card:hover .empty_heart {
-    //     -webkit-animation: change-background 0.35s;
-    //             animation: change-background 0.35s;
-    //     -webkit-animation-fill-mode: forwards;
-    //             animation-fill-mode: forwards;
-    // }
-                                                        /*Alternative - hover on card*/
-    // .restau__card:hover .white {
-    //     -webkit-animation: change-background 0.35s;
-    //             animation: change-background 0.35s;
-    //     -webkit-animation-fill-mode: forwards;
-    //             animation-fill-mode: forwards;
-    // }
+    overflow-y: hidden;
 
     .restau__card {
         max-width: 350px;
@@ -393,7 +380,6 @@ ol li {
 --Footer--
 --------*/
 .Footer {
-    margin-top: 55px;
     width: 100%;
     padding: 0 5%;
     height: 200px;

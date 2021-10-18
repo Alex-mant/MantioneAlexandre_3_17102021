@@ -182,7 +182,7 @@ ol li {
   padding: 0 5%;
   margin-top: 90px;
   background-color: #f5f5f5;
-  /*Alternative - hover on card*/
+  overflow-y: hidden;
 }
 
 .restaurants .restau__card {
@@ -367,7 +367,6 @@ ol li {
 --Footer--
 --------*/
 .Footer {
-  margin-top: 55px;
   width: 100%;
   padding: 0 5%;
   height: 200px;

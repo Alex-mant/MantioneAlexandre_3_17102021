@@ -179,8 +179,21 @@ ol li {
 .restaurants {
     padding: 0 5%;
     margin-top: 90px;
-    margin-bottom: 55px;
     background-color: #f5f5f5;
+
+    .restau__card:hover .empty_heart {
+        -webkit-animation: change-background 0.35s;
+                animation: change-background 0.35s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+
+    .restau__card:hover .white {
+        -webkit-animation: change-background 0.35s;
+                animation: change-background 0.35s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
 
     .restau__card {
         max-width: 350px;
@@ -189,8 +202,11 @@ ol li {
         background-color: #fff;
         margin: 0 auto 20px auto;
         box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
+        cursor: pointer;
+        
 
         .card__like {
+            
             @-webkit-keyframes change-background {
                 0% {
                     opacity: 100%;
@@ -319,20 +335,8 @@ ol li {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-
-            .coeur:hover .empty_heart {
-                -webkit-animation: change-background 0.35s;
-                        animation: change-background 0.35s;
-                -webkit-animation-fill-mode: forwards;
-                        animation-fill-mode: forwards;
-            }
-
-            .coeur:hover .white {
-                -webkit-animation: change-background 0.35s;
-                        animation: change-background 0.35s;
-                -webkit-animation-fill-mode: forwards;
-                        animation-fill-mode: forwards;
-            }
+           
+            
         }
 
         .card__identity {
@@ -378,6 +382,7 @@ ol li {
 --Footer--
 --------*/
 .Footer {
+    margin-top: 55px;
     width: 100%;
     padding: 0 5%;
     height: 200px;

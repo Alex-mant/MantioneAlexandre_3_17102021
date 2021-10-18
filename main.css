@@ -179,7 +179,6 @@ ol li {
 -Restaurants-
 --------*/
 .restaurants {
-  width: 100%;
   padding: 0 5%;
   margin-top: 90px;
   margin-bottom: 55px;
@@ -187,12 +186,11 @@ ol li {
 }
 
 .restaurants .restau__card {
+  max-width: 350px;
   overflow: hidden;
   border-radius: 16px;
   background-color: #fff;
   margin: 0 auto 20px auto;
-  width: 90%;
-  min-height: 250px;
   -webkit-box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
           box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
 }
@@ -285,6 +283,7 @@ ol li {
 
 .restaurants .restau__card .card__like .white {
   background-color: white;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -295,11 +294,13 @@ ol li {
 
 .restaurants .restau__card .card__like .empty_heart {
   background-color: #000;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
 .restaurants .restau__card .card__like .filled {
   background-image: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -328,6 +329,17 @@ ol li {
   padding: 20px 20px;
 }
 
+.restaurants .restau__card .card__img {
+  position: relative;
+}
+
+.restaurants .restau__card .card__img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .restaurants .restau__card .card__title,
 .restaurants .restau__card .card__place {
   margin: 0;
@@ -348,39 +360,6 @@ ol li {
   font-size: 14px;
   color: #0a8d6d;
   background-color: #99e2d0;
-}
-
-.restaurants .restau__card .card__img1 {
-  position: relative;
-  background-image: url(./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: 110%;
-  background-position-y: -45px;
-  height: 170px;
-}
-
-.restaurants .restau__card .card__img2 {
-  position: relative;
-  background-image: url(./restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: 110%;
-  background-position-y: -150px;
-  height: 170px;
-}
-
-.restaurants .restau__card .card__img3 {
-  position: relative;
-  background-image: url(./restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 110%;
-  background-position-y: -45px;
-  height: 170px;
-}
-
-.restaurants .restau__card .card__img4 {
-  position: relative;
-  background-image: url(./restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: 105%;
-  background-position-y: -40px;
-  background-position-x: -10px;
-  height: 170px;
 }
 
 /*------

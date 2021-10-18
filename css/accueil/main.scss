@@ -177,20 +177,24 @@ ol li {
 --------*/
 
 .restaurants {
-    padding: 0 5%;
-    margin-top: 90px;
+    padding: 32px 5% 60px;
+    margin-top: 80px;
     background-color: #f5f5f5;
     overflow-y: hidden;
+    h2.restau__title{
+            margin: 0px 0 32px 0;
+        }       
+
 
     .restau__card {
         max-width: 350px;
         overflow: hidden;
         border-radius: 16px;
         background-color: #fff;
-        margin: 0 auto 20px auto;
+        margin:  20px auto 0 auto;
         box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
-        cursor: pointer;        
-
+        cursor: pointer; 
+        
         .card__like {
             
             @-webkit-keyframes change-background {

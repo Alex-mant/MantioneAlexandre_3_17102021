@@ -1,0 +1,35 @@
+@media screen and (min-width:1025px){
+    .restau__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .restau__card{
+        width:48%;
+        max-width: 610px;
+    }
+}
+
+@media screen and (min-width:1310px){
+    .wrapper{
+        width: 1250px;
+        margin: 0 auto;
+    }
+    .rest_title__container{
+        max-width: 1250px;
+        margin: 0 auto;          
+    }
+
+    .restau__wrapper{
+        margin: 0;
+    }
+    .restau__card{
+        width:100%;
+        max-width: 610px;
+    }
+    .operating{
+        padding: 0;
+    }
+    .operating__list{
+        display: flex;        
+    }
+}

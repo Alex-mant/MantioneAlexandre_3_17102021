@@ -83,12 +83,17 @@ ol li {
   margin-top: 13px;
   margin-bottom: 42px;
 }
-.expOurRest a {
+.expOurRest .expOurRest__button {
   padding: 15px 20px;
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: #ffff;
+  transition: 0.5s;
+}
+.expOurRest .expOurRest__button:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0.88;
   box-shadow: 0.25rem 0.25rem 10px black;
 }
 
@@ -100,7 +105,7 @@ ol li {
   padding: 0 5%;
 }
 .operating h2 {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .operating .op__card {
   border-radius: 16px;
@@ -109,9 +114,13 @@ ol li {
   padding: 25px 20px;
   margin: 15px;
   cursor: pointer;
+  transition: 0.5s;
 }
 .operating .op__card:hover .op__icon {
   color: #9356DC;
+}
+.operating .op__card:hover {
+  background-color: #bb8df35d;
 }
 .operating .op__icon {
   font-size: 18px;
@@ -121,6 +130,14 @@ ol li {
 .operating ol {
   counter-reset: listOl;
   padding: 0;
+}
+.operating ol .op_li {
+  margin-right: 35px;
+  position: relative;
+  width: 95%;
+}
+.operating ol .op_li li {
+  width: 100%;
 }
 .operating ol li::before {
   display: flex;
@@ -134,7 +151,7 @@ ol li {
   border-radius: 100px;
   color: #fff;
   position: absolute;
-  left: 5.2%;
+  left: 0;
 }
 .operating i {
   margin-right: 20px;
@@ -144,16 +161,15 @@ ol li {
 -Restaurants-
 --------*/
 .restaurants {
-  padding: 32px 5% 60px;
+  padding: 32px 20px 60px;
   margin-top: 80px;
   background-color: #f5f5f5;
   overflow-y: hidden;
 }
 .restaurants h2.restau__title {
-  margin: 0px 0 32px 0;
+  margin: 0px;
 }
 .restaurants .restau__card {
-  max-width: 350px;
   overflow: hidden;
   border-radius: 16px;
   background-color: #fff;
@@ -337,6 +353,10 @@ ol li {
   font-size: 15px;
   padding: 5px 0;
   color: #ffff;
+}
+.Footer .footer_links a:hover {
+  text-decoration: underline;
+  color: #9356DC;
 }
 .Footer .footer_links .footer_icon {
   margin-right: 10px;

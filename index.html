@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/responsive.css">
     <script src="https://kit.fontawesome.com/5725aae538.js" crossorigin="anonymous"></script>
     <title>ohmyfood/Accueil</title>
 </head>
@@ -26,18 +27,18 @@
             <a href="#" class="expOurRest__button">Explorer nos restaurants</a>
         </section>
 
-        <section class="operating">
+        <section class="operating wrapper">
             <h2>Fonctionnement</h2>
-            <ol>
-                <li class="op__card"><i class="fas fa-mobile-alt op__icon"></i>Choisissez un restaurant</li>
-                <li class="op__card"><i class="fas fa-list-ul op__icon"></i>Composez votre menu</li>
-                <li class="op__card"><i class="fas fa-store op__icon"></i>Dégustez au restaurant</li>
+            <ol class="operating__list">
+               <div class="op_li"><li class="op__card"><i class="fas fa-mobile-alt op__icon"></i>Choisissez un restaurant</li></div>
+               <div class="op_li"><li class="op__card"><i class="fas fa-list-ul op__icon"></i>Composez votre menu</li></div>
+                <div class="op_li"><li class="op__card"><i class="fas fa-store op__icon"></i>Dégustez au restaurant</li></div>
             </ol>
         </section>
 
         <section class="restaurants">
-            <h2 class="restau__title">Restaurants</h2>
-            <div class="restau__wrapper">
+            <div class="wrapper"><h2 class="restau__title">Restaurants</h2></div>
+            <div class="restau__wrap wrapper">
 
                 <div class="restau__card">
                     <div class="card__img">
@@ -121,12 +122,14 @@
         </section>
     </main>
     <footer class="Footer">
-        <h4>ohmyfood</h4>
-        <div class="footer_links">
-            <a href="#"><i class="fas fa-utensils footer_icon"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fas fa-hands-helping footer_icon"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
+        <div class="wrapper">
+            <h4>ohmyfood</h4>
+            <div class="footer_links">
+                <a href="#"><i class="fas fa-utensils footer_icon"></i>Proposer un restaurant</a>
+                <a href="#"><i class="fas fa-hands-helping footer_icon"></i>Devenir partenaire</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
     </footer>
 </body>

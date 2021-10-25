@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /*font-family: 'Roboto', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto2:wght@100&display=swap');
+/*Animations*/
 
 /*-------
 -Variables-
@@ -35,20 +36,99 @@ sans-serif;
     height: 260px;
     background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
+    margin-bottom: 35px;
     .menucard{
         display: flex;
+        flex-direction: column;
         width: 100%;
         padding: 35px 18px;
         border-radius: 50px 50px 0 0;
         position: absolute;
         top: 210px;
-        height: 260px;
         background-color: rgba(238, 232, 220, 0.986);
-        h1.menucard__title{
-            font-family: $title;
-            margin-top: 0;
+        .menu__header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            h1.menuheader__title{
+                font-family: $title;
+                font-weight: lighter;
+                font-size: 28px;
+                margin-top: 0;
+            }
+        }
+        .card__like{
+            margin-right: 20px;
+            .white {
+                background-color: rgba(238, 232, 220, 0.986);
+            }
         }
     }
 }
+#starter{
+    margin:0 auto;
+    .starterCard__description{
+        font-family: $textAlt;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    .starter__card{
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 335px;
+        height: 66px;
+        background: #ffffff;
+        border-radius: 16px;    
+        overflow: hidden;
+        cursor: pointer;
+        .starterCard__menu{
+            margin: 0;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0 15px 15px;
+        }
+        .starterCard__menu, .starterCard__title, .starterCard__description{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .starterCard__title, .starterCard__description{
+            margin: 0;
+        }
+        
+        .starterCard__price{
+            padding: 15px 0px;
+            background-color: #ffffff;
+            font-weight: bolder;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            transition-duration: 0.5s;
+        }
+        .starterCard__validation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            width: 45px;
+            margin-right: -45px;
+            background: #99E2D0;
+            color: white;    
+            transition-duration: 0.5s;    
+        }    
+        &:hover .rotate{
+            transition: transform 0.5s;
+            transform: rotate(360deg);        
+        }
+        &:hover .starterCard__validation {
+            margin-right: 0;
+            transition-duration: 0.5s;
+        }
+       
+    }
+}
+
 
 

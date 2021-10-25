@@ -1,17 +1,24 @@
 @media screen and (min-width:1025px){
+    .operating{
+        .op__card{
+            justify-content: space-between;
+        }       
+    }
+
     .restau__wrap{
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 1200px;
     }
     .restau__card{
         width:48%;
-        max-width: 610px;
+        min-width: 590px;
         transition: 0.5s;
     }
     .restau__card:hover{
-        transform: scale(1.005);
-        opacity: 0.9;
-        box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.493);
+        opacity: 0.8;
+        box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.63);
     }
 }
 

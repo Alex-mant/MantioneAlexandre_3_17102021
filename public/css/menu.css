@@ -1,0 +1,44 @@
+/*-------
+--Fonts--
+--------*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*font-family: 'Shrikhand', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto2:wght@100&display=swap");
+/*-------
+-Variables-
+--------*/
+/*Header*/
+.left_arrow {
+  font-size: 18px;
+  position: absolute;
+  top: 24px;
+  left: 5%;
+}
+.left_arrow a {
+  color: #353535;
+}
+
+.menu_bkg {
+  position: relative;
+  height: 260px;
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+}
+.menu_bkg .menucard {
+  display: flex;
+  width: 100%;
+  padding: 35px 18px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  top: 210px;
+  height: 260px;
+  background-color: rgba(238, 232, 220, 0.986);
+}
+.menu_bkg .menucard h1.menucard__title {
+  font-family: "Shrikhand", cursive;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=menu.css.map */

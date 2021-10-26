@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./public/css/style.css">
         <link rel="stylesheet" href="./public/css/menu.css">
         <link rel="stylesheet" href="./public/css/font.css">
+        <link rel="stylesheet" href="./public/css/responsive.css">
         <script src="https://kit.fontawesome.com/5725aae538.js" crossorigin="anonymous"></script>
         <title>ohmyfood/Menu/</title>
     </head>
@@ -31,111 +32,113 @@
                     </div>
                 </div>
             </div>
-            <section id="starter">
-                <div class="section__title">Entrées</div>
-                <div class="listOfStarter">
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Tartare de thon</h4>
-                            <p class="starterCard__description">Assaisonné au yuzu</p>
+            <div class="menucontainer">
+                <section id="starter">
+                    <div class="section__title">Entrées</div>
+                    <div class="listOfStarter">
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Tartare de thon</h4>
+                                <p class="starterCard__description">Assaisonné au yuzu</p>
+                            </div>
+                            <div class="starterCard__price"><span>25€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
-                        <div class="starterCard__price"><span>25€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Bouchée de homard croustillant</h4>
+                                <p class="starterCard__description">Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="starterCard__price"><span>35€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Bouchée de homard croustillant</h4>
-                            <p class="starterCard__description">Et sa farandole de petits légumes</p>
-                        </div>
-                        <div class="starterCard__price"><span>35€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Velouté de cèpes</h4>
-                            <p class="starterCard__description">Aux truffes</p>
-                        </div>
-                        <div class="starterCard__price"><span>20€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="mainDishes">
-                <div class="section__title">Plats</div>
-                <div class="listOfStarter">
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Poulet rôti aux herbes de Provence</h4>
-                            <p class="starterCard__description">Et sa crème de truffe</p>
-                        </div>
-                        <div class="starterCard__price"><span>40€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Velouté de cèpes</h4>
+                                <p class="starterCard__description">Aux truffes</p>
+                            </div>
+                            <div class="starterCard__price"><span>20€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Langouste rôtie</h4>
-                            <p class="starterCard__description">Et ses légumes de saison</p>
+                </section>
+                <section id="mainDishes">
+                    <div class="section__title">Plats</div>
+                    <div class="listOfStarter">
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Poulet rôti aux herbes de Provence</h4>
+                                <p class="starterCard__description">Et sa crème de truffe</p>
+                            </div>
+                            <div class="starterCard__price"><span>40€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
-                        <div class="starterCard__price"><span>35€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Langouste rôtie</h4>
+                                <p class="starterCard__description">Et ses légumes de saison</p>
+                            </div>
+                            <div class="starterCard__price"><span>35€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Côte de boeuf Angus</h4>
-                            <p class="starterCard__description">Et sa purée de panais</p>
-                        </div>
-                        <div class="starterCard__price"><span>44€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="dessert">
-                <div class="section__title">Dessert</div>
-                <div class="listOfStarter">
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Farandole de desserts</h4>
-                            <p class="starterCard__description">Du chef</p>
-                        </div>
-                        <div class="starterCard__price"><span>18€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Crème brulée</h4>
-                            <p class="starterCard__description">Revisitée</p>
-                        </div>
-                        <div class="starterCard__price"><span>22€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Côte de boeuf Angus</h4>
+                                <p class="starterCard__description">Et sa purée de panais</p>
+                            </div>
+                            <div class="starterCard__price"><span>44€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="starter__card">
-                        <div class="starterCard__menu">
-                            <h4 class="starterCard__title">Tiramisu</h4>
-                            <p class="starterCard__description">À la noisette</p>
+                </section>
+                <section id="dessert">
+                    <div class="section__title">Dessert</div>
+                    <div class="listOfStarter">
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Farandole de desserts</h4>
+                                <p class="starterCard__description">Du chef</p>
+                            </div>
+                            <div class="starterCard__price"><span>18€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
-                        <div class="starterCard__price"><span>23€</span></div>
-                        <div class="starterCard__validation">
-                            <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Crème brulée</h4>
+                                <p class="starterCard__description">Revisitée</p>
+                            </div>
+                            <div class="starterCard__price"><span>22€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                        <div class="starter__card">
+                            <div class="starterCard__menu">
+                                <h4 class="starterCard__title">Tiramisu</h4>
+                                <p class="starterCard__description">À la noisette</p>
+                            </div>
+                            <div class="starterCard__price"><span>23€</span></div>
+                            <div class="starterCard__validation">
+                                <div class="rotate"><i class="fa fa-check-circle"></i></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <section class="command_button">
                 <a href="#" class="button--mainstyle">Commander</a>
             </section>

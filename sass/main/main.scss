@@ -178,6 +178,7 @@ sans-serif;
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -324,7 +325,7 @@ ol li {
 -Restaurants-
 --------*/
 
-.restaurants {
+#restaurants {
     padding: 32px 20px 60px;
     margin-top: 80px;
     background-color: #f5f5f5;

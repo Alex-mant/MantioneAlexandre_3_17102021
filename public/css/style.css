@@ -147,6 +147,7 @@
 --------*/
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -274,16 +275,16 @@ ol li {
 /*------
 -Restaurants-
 --------*/
-.restaurants {
+#restaurants {
   padding: 32px 20px 60px;
   margin-top: 80px;
   background-color: #f5f5f5;
   overflow-y: hidden;
 }
-.restaurants h2.restau__title {
+#restaurants h2.restau__title {
   margin: 0px;
 }
-.restaurants .restau__card {
+#restaurants .restau__card {
   overflow: hidden;
   border-radius: 16px;
   background-color: #fff;
@@ -291,29 +292,29 @@ ol li {
   box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.29);
   cursor: pointer;
 }
-.restaurants .restau__card .card__identity {
+#restaurants .restau__card .card__identity {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px;
 }
-.restaurants .restau__card .card__img {
+#restaurants .restau__card .card__img {
   position: relative;
 }
-.restaurants .restau__card .card__img img {
+#restaurants .restau__card .card__img img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.restaurants .restau__card .card__title,
-.restaurants .restau__card .card__place {
+#restaurants .restau__card .card__title,
+#restaurants .restau__card .card__place {
   margin: 0;
 }
-.restaurants .restau__card .card__place {
+#restaurants .restau__card .card__place {
   font-family: "Roboto2", sans-serif;
   font-weight: bolder;
 }
-.restaurants .restau__card .new {
+#restaurants .restau__card .new {
   border-radius: 3px;
   position: absolute;
   padding: 5px 10px;

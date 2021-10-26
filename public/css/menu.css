@@ -22,7 +22,8 @@
 }
 
 img.rest__bkg {
-  max-height: 250px;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .menucard {

@@ -51,7 +51,7 @@
   }
 }
 /*RestauMenu*/
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1200px) {
   .rest__bkg {
     width: 100%;
     height: 515px;
@@ -59,7 +59,7 @@
   }
 
   .menucard {
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -67,6 +67,10 @@
   .menucontainer {
     display: flex;
     flex-direction: row;
+  }
+
+  #starter .starter__card, #mainDishes .starter__card, #dessert .starter__card {
+    width: 380px;
   }
 }
 

@@ -87,7 +87,6 @@ img.rest__bkg {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  -webkit-box-shadow: 0px 7px 36px 0px #000000;
   box-shadow: 0px 3px 8px 0px #b1b1b1;
 }
 #starter .starter__card .starterCard__menu, #mainDishes .starter__card .starterCard__menu, #dessert .starter__card .starterCard__menu {

@@ -21,81 +21,92 @@
   color: #353535;
 }
 
-.menu_bkg {
-  position: relative;
-  height: 260px;
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  margin-bottom: 35px;
+img.rest__bkg {
+  max-height: 250px;
 }
-.menu_bkg .menucard {
+
+.menucard {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 35px 18px;
   border-radius: 50px 50px 0 0;
-  position: absolute;
-  top: 210px;
-  background-color: #eee8dc;
+  margin-top: -50px;
+  background-color: #f6f6f6;
 }
-.menu_bkg .menucard .menu__header {
+.menucard .menu__header {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.menu_bkg .menucard .menu__header h1.menuheader__title {
+.menucard .menu__header h1.menuheader__title {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
   font-size: 28px;
   margin-top: 0;
 }
-.menu_bkg .menucard .card__like {
+.menucard .card__like {
   margin-right: 20px;
 }
-.menu_bkg .menucard .card__like .white {
-  background-color: rgba(238, 232, 220, 0.986);
+.menucard .card__like .white {
+  background-color: #f6f6f6;
 }
 
-#starter {
-  margin: 0 auto;
+#starter, #mainDishes, #dessert {
+  margin: 0 auto 25px auto;
 }
-#starter .section__title {
+#starter .section__title, #mainDishes .section__title, #dessert .section__title {
+  position: relative;
   font-family: "Roboto2", sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
+  padding-bottom: 10px;
 }
-#starter .starterCard__description {
+#starter .section__title::after, #mainDishes .section__title::after, #dessert .section__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #99e2d0;
+  width: 40px;
+  height: 3px;
+}
+#starter .starterCard__description, #mainDishes .starterCard__description, #dessert .starterCard__description {
   font-family: "Roboto2", sans-serif;
   font-weight: bolder;
   font-size: 15px;
 }
-#starter .starter__card {
+#starter .starter__card, #mainDishes .starter__card, #dessert .starter__card {
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
-  min-width: 335px;
+  width: 335px;
   height: 66px;
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
+  -webkit-box-shadow: 0px 7px 36px 0px #000000;
+  box-shadow: 0px 3px 8px 0px #b1b1b1;
 }
-#starter .starter__card .starterCard__menu {
+#starter .starter__card .starterCard__menu, #mainDishes .starter__card .starterCard__menu, #dessert .starter__card .starterCard__menu {
+  width: 260px;
   margin: 0;
   height: 100px;
   display: flex;
   flex-direction: column;
   padding: 15px 0 15px 15px;
 }
-#starter .starter__card .starterCard__menu, #starter .starter__card .starterCard__title, #starter .starter__card .starterCard__description {
+#starter .starter__card .starterCard__menu, #starter .starter__card .starterCard__title, #starter .starter__card .starterCard__description, #mainDishes .starter__card .starterCard__menu, #mainDishes .starter__card .starterCard__title, #mainDishes .starter__card .starterCard__description, #dessert .starter__card .starterCard__menu, #dessert .starter__card .starterCard__title, #dessert .starter__card .starterCard__description {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-#starter .starter__card .starterCard__title, #starter .starter__card .starterCard__description {
+#starter .starter__card .starterCard__title, #starter .starter__card .starterCard__description, #mainDishes .starter__card .starterCard__title, #mainDishes .starter__card .starterCard__description, #dessert .starter__card .starterCard__title, #dessert .starter__card .starterCard__description {
   margin: 0;
 }
-#starter .starter__card .starterCard__price {
+#starter .starter__card .starterCard__price, #mainDishes .starter__card .starterCard__price, #dessert .starter__card .starterCard__price {
   padding: 15px 0px;
   background-color: #ffffff;
   font-weight: bolder;
@@ -104,24 +115,32 @@
   align-items: flex-end;
   transition-duration: 0.5s;
 }
-#starter .starter__card .starterCard__validation {
+#starter .starter__card .starterCard__validation, #mainDishes .starter__card .starterCard__validation, #dessert .starter__card .starterCard__validation {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   width: 40px;
   margin-right: -45px;
   background: #99E2D0;
   color: white;
   transition-duration: 0.5s;
 }
-#starter .starter__card:hover .rotate {
+#starter .starter__card:hover .rotate, #mainDishes .starter__card:hover .rotate, #dessert .starter__card:hover .rotate {
   transition: transform 0.5s;
   transform: rotate(360deg);
 }
-#starter .starter__card:hover .starterCard__validation {
+#starter .starter__card:hover .starterCard__validation, #mainDishes .starter__card:hover .starterCard__validation, #dessert .starter__card:hover .starterCard__validation {
   margin-right: -1px;
   transition-duration: 0.5s;
+}
+
+.command_button {
+  margin: 0 auto;
+  padding: 35px 0 50px 0;
+}
+.command_button .button--mainstyle {
+  padding: 15px 35px;
 }
 
 /*# sourceMappingURL=menu.css.map */

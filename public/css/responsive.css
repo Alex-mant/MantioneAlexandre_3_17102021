@@ -4,6 +4,10 @@
     justify-content: space-between;
   }
 
+  a.restau__card--responsive {
+    width: 100%;
+  }
+
   .restau__wrap {
     display: flex;
     justify-content: space-between;
@@ -12,7 +16,7 @@
   }
 
   .restau__card {
-    width: 48%;
+    width: 100%;
     min-width: 590px;
     transition: 0.5s;
   }
@@ -23,6 +27,10 @@
   }
 }
 @media screen and (min-width: 1310px) {
+  a.restau__card--responsive {
+    width: auto;
+  }
+
   .wrapper {
     width: 1250px;
     margin: 0 auto;
@@ -31,6 +39,10 @@
   .rest_title__container {
     max-width: 1250px;
     margin: 0 auto;
+  }
+
+  .restau__wrap {
+    max-width: 1200px;
   }
 
   .restau__wrapper {

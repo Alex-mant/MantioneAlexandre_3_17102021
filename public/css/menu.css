@@ -10,6 +10,32 @@
 /*-------
 -Variables-
 --------*/
+/*--------------------
+------ANIMATIONS------
+---------------------*/
+@-webkit-keyframes pop {
+  0% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+/*--------------------
+-----FIN ANIMATIONS----
+---------------------*/
 /*Header*/
 .left_arrow {
   font-size: 18px;
@@ -27,6 +53,7 @@
 
 img.rest__bkg {
   width: 100vw;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -93,6 +120,11 @@ img.rest__bkg {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0px 3px 8px 0px #b1b1b1;
+  -webkit-animation: pop 1s forwards;
+  animation: pop 1s forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  transform: scale(0);
 }
 #starter .starter__card .starterCard__menu, #mainDishes .starter__card .starterCard__menu, #dessert .starter__card .starterCard__menu {
   width: 100%;
@@ -138,6 +170,18 @@ img.rest__bkg {
 #starter .starter__card:hover .starterCard__validation, #mainDishes .starter__card:hover .starterCard__validation, #dessert .starter__card:hover .starterCard__validation {
   margin-right: -1px;
   transition-duration: 0.5s;
+}
+#starter .delay1, #mainDishes .delay1, #dessert .delay1 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+#starter .delay2, #mainDishes .delay2, #dessert .delay2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+#starter .delay3, #mainDishes .delay3, #dessert .delay3 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .command_button {

@@ -21,6 +21,10 @@
   color: #353535;
 }
 
+.restaurantImage {
+  overflow-x: hidden;
+}
+
 img.rest__bkg {
   width: 100vw;
   object-fit: cover;

@@ -21,7 +21,7 @@
   height: 100%;
   text-align: center;
   vertical-align: middle;
-  animation: vanish 5s ease-in-out 3s infinite;
+  animation: vanish 5s 3s infinite;
 }
 
 .loader {
@@ -426,6 +426,7 @@ ol li {
   color: #ffff;
 }
 .Footer .footer_links a:hover {
+  transition-duration: 1s;
   text-decoration: underline;
   color: #9356DC;
 }

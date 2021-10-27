@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main/main.scss:public/css/style.css ./sass/responsive/responsive.scss:public/css/responsive.css ./sass/main/menu.scss:public/css/menu.css"
+    "sass": "sass --watch ./sass/main/main.scss:public/css/style.css ./sass/responsive/responsive.scss:public/css/responsive.css ./sass/menu/menu.scss:public/css/menu.css"
   },
   "repository": {
     "type": "git",

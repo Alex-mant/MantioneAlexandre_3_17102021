@@ -427,7 +427,6 @@ ol li {
 }
 .Footer .footer_links a:hover {
   transition-duration: 1s;
-  text-decoration: underline;
   color: #9356DC;
 }
 .Footer .footer_links .footer_icon {

@@ -1,79 +1,81 @@
 /*Index.hmtl*/
-@media screen and (min-width:1025px){
-    .operating{
-        .op__card{
-            justify-content: space-between;
-        }       
+@media screen and (min-width: 1025px) {
+  .operating {
+    .op__card {
+      justify-content: space-between;
     }
-    a.restau__card--responsive{
-        width: 100%;
-    }
-    .restau__wrap{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-width: 1200px;
-    }
-    .restau__card{
-        width: 100%;
-        min-width: 590px;
-        transition: 0.5s;
-    }
-    .restau__card:hover{
-        opacity: 0.8;
-        box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.63);
-    }
+  }
+  a.restau__card--responsive {
+    width: 100%;
+  }
+  .restau__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+  .restau__card {
+    width: 100%;
+    min-width: 590px;
+    transition: 0.5s;
+  }
+  .restau__card:hover {
+    opacity: 0.8;
+    box-shadow: -1px 3px 8px 3px rgba(0, 0, 0, 0.63);
+  }
 }
 
-@media screen and (min-width:1310px){
-    a.restau__card--responsive{
-        width: auto;
-    }
-    .wrapper{
-        width: 1250px;
-        margin: 0 auto;
-    }
-    .rest_title__container{
-        max-width: 1250px;
-        margin: 0 auto;          
-    }
-    .restau__wrap{
-        max-width: 1200px;
-    }
-    .restau__wrapper{
-        margin: 0;
-    }
-    .restau__card{
-        width:100%;
-        max-width: 610px;
-    }
-    .operating{
-        padding: 0;
-    }
-    .operating__list{
-        display: flex;        
-    }
+@media screen and (min-width: 1310px) {
+  a.restau__card--responsive {
+    width: auto;
+  }
+  .wrapper {
+    width: 1250px;
+    margin: 0 auto;
+  }
+  .rest_title__container {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .restau__wrap {
+    max-width: 1200px;
+  }
+  .restau__wrapper {
+    margin: 0;
+  }
+  .restau__card {
+    width: 100%;
+    max-width: 610px;
+  }
+  .operating {
+    padding: 0;
+  }
+  .operating__list {
+    display: flex;
+  }
 }
 
 /*RestauMenu*/
-@media screen and (min-width:1200px){
-    .rest__bkg{
-        width: 100%;
-        height: 515px;
-        object-fit: cover;
+@media screen and (min-width: 1200px) {
+  .rest__bkg {
+    width: 100%;
+    height: 515px;
+    object-fit: cover;
+  }
+  .menucard {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menucontainer {
+    display: flex;
+    flex-direction: row;
+  }
+  #starter,
+  #mainDishes,
+  #dessert {
+    .starter__card {
+      width: 380px;
     }
-    .menucard{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .menucontainer{        
-        display: flex;
-        flex-direction: row;
-    }
-    #starter, #mainDishes, #dessert{
-        .starter__card{
-            width: 380px;
-        }
-    }
+  }
 }

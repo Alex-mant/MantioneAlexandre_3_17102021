@@ -1,209 +1,209 @@
 /*-------
 --Fonts--
 --------*/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*font-family: 'Shrikhand', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto2:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto2:wght@100&display=swap");
 /*Animations*/
 
 /*-------
 -Variables-
 --------*/
-$primary : #9356DC;
-$secondary : #FF79DA;
-$tertiary :#99E2D0;
-$title: 'Shrikhand',
-cursive;
-$text:'Roboto',
-sans-serif;
-$textAlt:'Roboto2',
-sans-serif;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$title: "Shrikhand", cursive;
+$text: "Roboto", sans-serif;
+$textAlt: "Roboto2", sans-serif;
 /*--------------------
 ------ANIMATIONS------
 ---------------------*/
-@-webkit-keyframes pop{
-    0%{ 
-        transform:scale(0);
-        visibility: hidden; 
-    }
-    100%{ 
-    	transform:scale(1);
-    	visibility:visible;
-    }
+@-webkit-keyframes pop {
+  0% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
 }
-@keyframes pop{
-    0%{ 
-        transform:scale(0);
-        visibility: hidden; 
-    }
-    100%{ 
-    	transform:scale(1);
-    	visibility:visible;
-    }
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
 }
 /*--------------------
 -----FIN ANIMATIONS----
 ---------------------*/
 
-
 /*Header*/
-.left_arrow{
-    font-size: 18px;
-    position: absolute;
-    top: 24px;
-    left: 5%;
-    a{
-        color: #353535;
-    }
+.left_arrow {
+  font-size: 18px;
+  position: absolute;
+  top: 24px;
+  left: 5%;
+  a {
+    color: #353535;
+  }
 }
-.restaurantImage{
-    overflow-x: hidden;
+.restaurantImage {
+  overflow-x: hidden;
 }
 
 img.rest__bkg {
-    width: 100vw;
-    -o-object-fit: cover;
-       object-fit: cover;
+  width: 100vw;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
-.menucard{
-    position: relative;
+.menucard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1285px;
+  padding: 35px 18px;
+  border-radius: 50px 50px 0 0;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  .menu__header {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    max-width: 1285px;
-    padding: 35px 18px;
-    border-radius: 50px 50px 0 0;
-    margin-top: -50px;
-    background-color: #f6f6f6;
-    .menu__header{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        h1.menuheader__title{
-            font-family: $title;
-            font-weight: lighter;
-            font-size: 28px;
-            margin-top: 0;
-        }
+    justify-content: space-between;
+    h1.menuheader__title {
+      font-family: $title;
+      font-weight: lighter;
+      font-size: 28px;
+      margin-top: 0;
     }
-    .card__like{
-        margin-right: 20px;
-        .white {
-            background-color: #f6f6f6;
-        }
+  }
+  .card__like {
+    margin-right: 20px;
+    .white {
+      background-color: #f6f6f6;
     }
+  }
 }
-#starter, #mainDishes, #dessert{
-    margin:0 auto 25px auto;
-    .section__title {
-        position: relative;
-        font-family: $textAlt;
-        text-transform: uppercase;
-        font-weight: bolder;
-        padding-bottom:10px ;
-    }
+#starter,
+#mainDishes,
+#dessert {
+  margin: 0 auto 25px auto;
+  .section__title {
+    position: relative;
+    font-family: $textAlt;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
 
-    .section__title::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: #99e2d0;
-        width: 40px;
-        height: 3px;
+  .section__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #99e2d0;
+    width: 40px;
+    height: 3px;
+  }
+  .starterCard__description {
+    font-family: $textAlt;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 2px;
+  }
+
+  .starter__card {
+    margin: 15px 0;
+    display: flex;
+    width: 100%;
+    height: 66px;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px 0px #b1b1b1;
+    -webkit-animation: pop 1s forwards;
+    animation: pop 1s forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.3, 1.65, 0.28, 0.8);
+    animation-timing-function: cubic-bezier(0.3, 1.65, 0.28, 0.8);
+    transform: scale(0);
+    .starterCard__menu {
+      width: 100%;
+      margin: 0;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0 15px 15px;
     }
-    .starterCard__description{
-        font-family: $textAlt;
-        font-weight: bolder;
-        font-size: 15px;
-        padding-top: 2px;
+    .starterCard__menu,
+    .starterCard__title,
+    .starterCard__description {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
-    
-    .starter__card{
-        margin: 15px 0;
-        display: flex;
-        width: 100%;
-        height: 66px;
-        background: #ffffff;
-        border-radius: 16px;    
-        overflow: hidden;
-        cursor: pointer; 
-        box-shadow: 0px 3px 8px 0px #b1b1b1;
-        -webkit-animation: pop 1s forwards;
-        animation: pop 1s forwards;
-        -webkit-animation-timing-function: cubic-bezier(0.3,1.65,0.28,0.80);
-        animation-timing-function: cubic-bezier(0.3,1.65,0.28,0.80);
-        transform: scale(0);
-        .starterCard__menu{
-            width: 100%;
-            margin: 0;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            padding: 15px 0 15px 15px;
-        }
-        .starterCard__menu, .starterCard__title, .starterCard__description{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .starterCard__title, .starterCard__description{
-            margin: 0;
-        }        
-        .starterCard__price{
-            margin-right: 35px;
-            padding: 15px 0px;
-            background-color: #ffffff;
-            font-weight: bolder;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            transition-duration: 0.5s;
-        }
-        .starterCard__validation{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            width: 75px;
-            margin-right: -75px;
-            background: #99E2D0;
-            color: white;    
-            transition-duration: 0.5s;    
-        }    
-        &:hover .rotate{
-            transition: transform 0.5s;
-            transform: rotate(360deg);        
-        }
-        &:hover .starterCard__validation {
-            margin-right: -1px;
-            transition-duration: 0.5s;
-        }
-       
+    .starterCard__title,
+    .starterCard__description {
+      margin: 0;
     }
-    .delay1{
-        -webkit-animation-delay: 0.1s;
-        animation-delay: 0.1s;
+    .starterCard__price {
+      margin-right: 35px;
+      padding: 15px 0px;
+      background-color: #ffffff;
+      font-weight: bolder;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      transition-duration: 0.5s;
     }
-    .delay2{
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
+    .starterCard__validation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      width: 75px;
+      margin-right: -75px;
+      background: #99e2d0;
+      color: white;
+      transition-duration: 0.5s;
     }
-    .delay3{
-        -webkit-animation-delay: 0.5s;
-        animation-delay: 0.5s;
+    &:hover .rotate {
+      transition: transform 0.5s;
+      transform: rotate(360deg);
     }
-    .delay4{
-        -webkit-animation-delay: 0.7s;
-        animation-delay: 0.7s;
+    &:hover .starterCard__validation {
+      margin-right: -1px;
+      transition-duration: 0.5s;
     }
+  }
+  .delay1 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  .delay4 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
 }
-.command_button{
-    margin: 0 auto;
-    padding: 35px 0 50px 0;
-    .button--mainstyle{
-        padding: 15px 35px;
-    }
+.command_button {
+  margin: 0 auto;
+  padding: 35px 0 50px 0;
+  .button--mainstyle {
+    padding: 15px 35px;
+  }
 }

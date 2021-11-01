@@ -81,7 +81,9 @@
     flex-direction: row;
   }
 
-  #starter .starter__card, #mainDishes .starter__card, #dessert .starter__card {
+  #starter .starMainDess__card,
+#mainDishes .starMainDess__card,
+#dessert .starMainDess__card {
     width: 380px;
   }
 }

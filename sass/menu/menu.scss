@@ -112,14 +112,14 @@ img.rest__bkg {
     width: 40px;
     height: 3px;
   }
-  .starterCard__description {
+  .menuChoice__description {
     font-family: $textAlt;
     font-weight: bolder;
     font-size: 15px;
     padding-top: 2px;
   }
 
-  .starter__card {
+  .starMainDess__card {
     margin: 15px 0;
     display: flex;
     width: 100%;
@@ -134,7 +134,7 @@ img.rest__bkg {
     -webkit-animation-timing-function: cubic-bezier(0.3, 1.65, 0.28, 0.8);
     animation-timing-function: cubic-bezier(0.3, 1.65, 0.28, 0.8);
     transform: scale(0);
-    .starterCard__menu {
+    .menuChoice__menu {
       width: 100%;
       margin: 0;
       height: 100px;
@@ -142,18 +142,18 @@ img.rest__bkg {
       flex-direction: column;
       padding: 15px 0 15px 15px;
     }
-    .starterCard__menu,
-    .starterCard__title,
-    .starterCard__description {
+    .menuChoice__menu,
+    .menuChoice__title,
+    .menuChoice__description {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
     }
-    .starterCard__title,
-    .starterCard__description {
+    .menuChoice__title,
+    .menuChoice__description {
       margin: 0;
     }
-    .starterCard__price {
+    .menuChoice__price {
       margin-right: 35px;
       padding: 15px 0px;
       background-color: #ffffff;
@@ -163,7 +163,7 @@ img.rest__bkg {
       align-items: flex-end;
       transition-duration: 0.5s;
     }
-    .starterCard__validation {
+    .menuChoice__validation {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -178,7 +178,7 @@ img.rest__bkg {
       transition: transform 0.5s;
       transform: rotate(360deg);
     }
-    &:hover .starterCard__validation {
+    &:hover .menuChoice__validation {
       margin-right: -1px;
       transition-duration: 0.5s;
     }

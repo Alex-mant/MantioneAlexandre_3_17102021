@@ -1,5 +1,8 @@
 /*Index.hmtl*/
 @media screen and (min-width: 1025px) {
+  img.rest__bkg {
+    height: 415px;
+  }
   .operating .op__card {
     justify-content: space-between;
   }
@@ -27,6 +30,9 @@
   }
 }
 @media screen and (min-width: 1310px) {
+  img.rest__bkg {
+    height: 515px;
+  }
   a.restau__card--responsive {
     width: auto;
   }
